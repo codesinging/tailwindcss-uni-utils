@@ -537,7 +537,7 @@ module.exports = {
             6: '6deg',
             12: '12deg',
         },
-        space: (theme, {negative}) => ({
+        space: (theme) => ({
             ...theme('spacing'),
         }),
         stroke: {
@@ -879,11 +879,6 @@ module.exports = {
         "justifyContent",
         "justifyItems",
         "gap",
-        "space",
-        "divideWidth",
-        "divideStyle",
-        "divideColor",
-        "divideOpacity",
         "placeSelf",
         "alignSelf",
         "justifySelf",
