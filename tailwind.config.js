@@ -1,5 +1,7 @@
 const colors = require('tailwindcss/colors')
 
+const negativeRpx = require('./negativeRpx')
+
 module.exports = {
     purge: [],
     presets: [],
@@ -416,9 +418,10 @@ module.exports = {
             disc: 'disc',
             decimal: 'decimal',
         },
-        margin: (theme) => ({
+        margin: (theme, {negative}) => ({
             auto: 'auto',
             ...theme('spacing'),
+            ...negative(negativeRpx(theme('spacing'))),
         }),
         maxHeight: (theme) => ({
             ...theme('spacing'),
